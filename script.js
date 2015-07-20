@@ -81,18 +81,15 @@ modifyAlbums(9);
 console.log(recordArray);
 
 // Display the new array in the browser
-var recordDom = document.getElementById(records);
+var recordDom = document.getElementById("records");
 /*
  JSON.stringify() is a built-in function
  on all major browsers that parses a complex
  structure like an array or JavaScript 
  object and lets you see it as a string.
 */
-var json = JSON.stringify(recordArray); //This works for console.log.  Can see all objects and properties.
-console.log(json);                      
 // recordDom.innerHTML = json;  
-// recordDom.innerHTML = JSON.stringify(recordArray, null, 2);
-// Both of these result in an error message that says Cannot set property 'innerHTML' of null.
+recordDom.innerHTML = JSON.stringify(recordArray, null, 2);
 
                                                                
 
